@@ -29,6 +29,7 @@ routes.post('/verificar-token', verificarToken);
 routes.get('/relatorio', RelatorioController.gerarRelatorio);
 routes.get('/relatorio/pdf', RelatorioController.exportarPDF);
 
-routes.get("/historico-vendas", listarHistorico);
+routes.get('/historico-vendas/:empresaId', listarHistorico);
+
 
 export default routes;
